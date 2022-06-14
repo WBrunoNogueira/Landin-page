@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
 
 }
 header{
@@ -12,21 +13,23 @@ header{
     background-color: black;
     display: flex;
     justify-content: center;/*alinha o container no meio da tela*/
+   
     
 }
 
 
 .container{
-    width: 1000px;
+    width:1500px;
     display: flex;
-    position: center;
-    justify-content: space-between;
-    align-items: center;   
+    justify-content:space-between;
+   align-items: center;
 }
 
 /*NAVBAR*/
  .logo img{
     width:100px;
+}
+.menu{
     flex: 1;
 }
 
@@ -55,10 +58,53 @@ nav a:hover {
 }
 
 /*BANNER*/
-section #banner{
+ section .banner {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/baner.png);
+    
+    
+    
+    
+
+    background-size: cover; /*propriedade responsavel por deixar o tamanho da imagem proporcinal ao tamanho da tela indempendente do dispositivo*/
+    height:850px;
+    width: auto;
+    
+}
+.column{ /*essa classe column é aplicada junto com a classe container, e é responasavel por deixar as div do baner uma em baixo da outra*/
+    flex-direction: column;
+}
+.banner_headline{
+    flex: 1; /*banner_headline com tamanho variavel*/
     display: flex;
     flex-direction: column;
-    background-image: url(../assets/images/baner.png);
-    background-color:#1ed760 ;
+    justify-content: center;
+    color: #1ed760;
+}
+.banner_headline h1{
+    font-size: 120px;
+    margin: 0;
+    padding: 0;
+   /*area fixa para espremer o texto, tamanho maximo de 350*/
+}
+.banner_headline h2{
+    font-size:16px;
+   margin-left: 200px;
+    padding: 0;
+    
    
+    margin-top: 30px;
+}
+
+.button_download{
+    display: flex;
+    justify-content: center;
+}
+.button_download button{
+    
+    margin-top: 50px;
+    background-color: #1ED760  ;
+    border-radius: 500px;
+    padding: 14px 32px;
 }
