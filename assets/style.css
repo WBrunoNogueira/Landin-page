@@ -80,7 +80,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fffff;
+    align-items: center;
+    color: white;
 }
 .banner_headline h1{
     font-size: 120px;
