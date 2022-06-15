@@ -80,7 +80,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #1ed760;
+    align-items: center;
+    color: white;
 }
 .banner_headline h1{
     font-size: 120px;
@@ -90,7 +91,6 @@ nav a:hover {
 }
 .banner_headline h2{
     font-size:16px;
-   margin-left: 200px;
     padding: 0;
     
    
